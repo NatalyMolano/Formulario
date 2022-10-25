@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Nomina de empleado</title>
+    <style>
+        body
+        {
+           background-image: url("https://www.xtrafondos.com/wallpapers/resized/montanas-nevadas-en-bosque-y-lago-3304.jpg?s=large" );
+           background-size: 130rem
+        }
+        form 
+        {
+            text-align: center;
+            color: black;
+            
+            
+        }
+        label{color: black;}
+        fieldset
+        {
+            margin: 6cm;
+            width: 20cm;
+            width: center;
+            background-image: url("https://www.xtrafondos.com/wallpapers/resized/montanas-con-nieve-976.jpg?s=large");
+        }
+    </style>
+
+</head>
+    
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Datos de Usuario</legend>
+
+            <label for="nombre">Ingrese nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"required placeholder="ingrese nombre del usuario" autofocus pattern="[A-Za-Z0-9]{5-12}"><br>
+
+            <label for="apellido">Ingrese apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" required placeholder="ingrese apellido del usuario"><br>
+            <label for="T.documento">Tipo de documento</label>
+            <br><select name="T.documento" id="T.documento">
+                <option value="C.C">Cedula de ciudadania</option>
+                <option value="T.I">Tarjeta de Identidad</option>
+                <option value="C.E">cedula Extranjera</option>
+            </select><br>
+
+            <label for="id">Ingrese su documento:</label><br>
+            <input type="text" id="id" name="id" required placeholder="ingrese el numero de documento"><br>
+            <label for= "T.documento">Tipo de documento<br></label>
+            
+            <label for="salario">Ingrese Salario:</label><br>
+            <input type="text" id="salario" name="salario"required placeholder="ingrese salario"><br>
+            <label for= "horas">Seleccione la cantidad de horas que trabaja:<br></label>
+            <br><select name="horas" id="horas">
+                <option value="menor_3_horas">menos de 3 horas</option>
+                <option value="3_horas">3 a 5 horas</option>
+                <option value="6_horas">6 a 8 horas</option>
+                <option value="9_horas">9 a 12 horas</option>
+                <option value="5_horas">mas de 12 horas</option>
+            </select><br>
+            <br><input type="submit" value="Enviar"><br><br>
+        </fieldset>
+
+    </form>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
